@@ -7,6 +7,8 @@ body{
     background-color: #eef9bf;
 }
 
+ /* Topo - Header */
+
 header{
     display: flex;
     justify-content: center;
@@ -35,6 +37,8 @@ main{
     width: 100%;
 }
 
+ /* Cartas */
+
 section{
     display: flex;
     align-items: center;
@@ -43,24 +47,55 @@ section{
     width: 1174px;
 }
 
-main div{
+.carta{
     width: 117px;
     height: 146px;
     background: #A7E9AF;
     border: 1px solid #99CEA8;
     box-sizing: border-box;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
     border-radius: 5px;
     margin-left: 34px;
     margin-bottom: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    perspective: 1000px;
 }
 
-main img{
+.carta img{
     width: 100px;
     height: 100px;
 }
+
+.carta:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+
+.carta.flip {
+    transform: rotateY(180deg);
+  }
+
+.frente {
+    transform: rotateY(180deg);
+  }
+
+.frente, .verso {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    backface-visibility: hidden;
+    background: #A7E9AF;
+}
+
+  /* Versão mobile */
 
 @media (max-width: 335px){
 
