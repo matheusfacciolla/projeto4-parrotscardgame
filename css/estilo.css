@@ -39,7 +39,7 @@ main{
 
  /* Cartas */
 
-section{
+ul{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@ section{
     width: 1174px;
 }
 
-.carta{
+.carta {
     width: 117px;
     height: 146px;
     background: #A7E9AF;
@@ -67,9 +67,36 @@ section{
     perspective: 1000px;
 }
 
-.carta img{
+.verso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verso img {
     width: 100px;
     height: 100px;
+}
+
+.face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.face img {
+    width: 50x;
+    height: 50px;
+}
+
+.frente, .verso {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    backface-visibility: hidden;
+    background: #A7E9AF;
 }
 
 .carta:active {
@@ -84,16 +111,6 @@ section{
 .frente {
     transform: rotateY(180deg);
   }
-
-.frente, .verso {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
-    border-radius: 5px;
-    position: absolute;
-    backface-visibility: hidden;
-    background: #A7E9AF;
-}
 
   /* Versão mobile */
 

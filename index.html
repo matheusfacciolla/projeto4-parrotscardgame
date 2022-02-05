@@ -27,63 +27,66 @@
     <!-- Conteúdo cartas -->
 
     <main>
-        <section>
-            <div class="carta" data-identifier="card">
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta1-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/metalparrot.gif" alt="Carta1-face">
-            </div>
-            <div class="carta" data-identifier="card">
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta2-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/metalparrot.gif" alt="Carta2-face">
-            </div>
-            <div class="carta" data-identifier="card">
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta3-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/revertitparrot.gif" alt="Carta3-face">
-            </div>
-            <div class="carta" data-identifier="card">
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta4-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/revertitparrot.gif" alt="Carta4-face">
-            </div>
-            <div class="carta" data-identifier="card">
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta5-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/bobrossparrot.gif" alt="Carta5-face">
-            </div>
-            <div class="carta" data-identifier="card">
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta6-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/bobrossparrot.gif" alt="Carta6-face">
-            </div>
-            <div class="carta" data-identifier="card"> 
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta7-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/explodyparrot.gif" alt="Carta7-face">
-            </div>
-            <div class="carta" data-identifier="card">
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta8-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/explodyparrot.gif" alt="Carta8-face">
-            </div>
-            <div class="carta" data-identifier="card"> 
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta9-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/fiestaparrot.gif" alt="Carta9-face">
-            </div >
-            <div class="carta" data-identifier="card"> 
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta10-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/fiestaparrot.gif" alt="Carta10-face">
-            </div>
-            <div class="carta" data-identifier="card">
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta11-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/tripletsparrot.gif" alt="Carta11-face">
-            </div>
-            <div class="carta" data-identifier="card">
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta12-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/tripletsparrot.gif" alt="Carta12-face">
-            </div>
-            <div class="carta" data-identifier="card">
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta13-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/unicornparrot.gif" alt="Carta13-face">
-            </div>
-            <div class="carta" data-identifier="card">
-                <img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta14-verso">
-                <img class="frente" data-identifier="front-face" src="arquivos-uteis/unicornparrot.gif" alt="Carta14-face">
-            </div>
+        <div class="timer">0</div>
+        <section class="cartas">
+            <ul>
+    <!--    <li class="carta" data-identifier="card">
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta1-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/metalparrot.gif" alt="Carta1-face"></div>
+            </li>
+            <li class="carta" data-identifier="card">
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta2-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/metalparrot.gif" alt="Carta2-face"></div>
+            </li>
+             <li class="carta" data-identifier="card">
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta3-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/revertitparrot.gif" alt="Carta3-face"></div>
+            </li>
+            <li class="carta" data-identifier="card">
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta4-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/revertitparrot.gif" alt="Carta4-face"></div>
+            </li>
+            <li class="carta" data-identifier="card">
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta5-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/bobrossparrot.gif" alt="Carta5-face"></div>
+            </li>
+            <li class="carta" data-identifier="card">
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta6-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/bobrossparrot.gif" alt="Carta6-face"></div>
+            </li>
+            <li class="carta" data-identifier="card"> 
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta7-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/explodyparrot.gif" alt="Carta7-face"></div>
+            </li>
+            <li class="carta" data-identifier="card">
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta8-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/explodyparrot.gif" alt="Carta8-face"></div>
+            </li>
+            <li class="carta" data-identifier="card"> 
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta9-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/fiestaparrot.gif" alt="Carta9-face"></div>
+            </li>
+            <li class="carta" data-identifier="card"> 
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta10-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/fiestaparrot.gif" alt="Carta10-face"></div>
+            </li>
+            <li class="carta" data-identifier="card">
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta11-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/tripletsparrot.gif" alt="Carta11-face"></div>
+            </li>
+            <li class="carta" data-identifier="card">
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta12-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/tripletsparrot.gif" alt="Carta12-face"></div>
+            </li>
+            <li class="carta" data-identifier="card">
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta13-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/unicornparrot.gif" alt="Carta13-face"></div>
+            </li>
+            <li class="carta" data-identifier="card">
+                <div class="verso" data-identifier="back-face"><img class="verso" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Carta14-verso"></div>
+                <div class="face" data-identifier="front-face"><img class="frente" data-identifier="front-face" src="arquivos-uteis/unicornparrot.gif" alt="Carta14-face"></div>
+            </li>   -->
+            </ul>   
         </section>
     </main>  
 
