@@ -1,3 +1,5 @@
+/* Layout Desktop */
+
 *{
     box-sizing: border-box;
 }
@@ -6,8 +8,6 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #eef9bf;
 }
-
- /* Topo - Header */
 
 header{
     display: flex;
@@ -37,8 +37,6 @@ main{
     width: 100%;
 }
 
- /* Cartas */
-
 ul{
     display: flex;
     align-items: center;
@@ -47,7 +45,7 @@ ul{
     width: 1174px;
 }
 
-.carta {
+.card {
     width: 117px;
     height: 146px;
     background: #A7E9AF;
@@ -67,13 +65,13 @@ ul{
     perspective: 1000px;
 }
 
-.verso {
+.back {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.verso img {
+.back img {
     width: 100px;
     height: 100px;
 }
@@ -89,7 +87,7 @@ ul{
     height: 50px;
 }
 
-.frente, .verso {
+.face, .back {
     width: 100px;
     height: 100px;
     padding: 20px;
@@ -99,40 +97,50 @@ ul{
     background: #A7E9AF;
 }
 
-.carta:active {
+.card:active {
     transform: scale(0.97);
     transition: transform .2s;
-  }
+}
 
-.carta.flip {
+.card.flip {
     transform: rotateY(180deg);
-  }
+}
 
-.frente {
+.face {
     transform: rotateY(180deg);
-  }
+}
+
+.clock{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+
+}
 
   /* Versão mobile */
 
 @media (max-width: 335px){
 
-    section{  
-        display: flex;
+    body{
+        flex-direction: center;
         justify-content: center;
-        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .carta {
         margin-left: 109px;
         margin-right: 109px;
     }
 
-    header{
-        display: flex;
-        justify-content: center;
-        margin-right: 11px;
-        margin-left: 12px;
-        margin-top: 40px;
-    }
-
-    header h1{
+    header h1 {
         font-family: Roboto;
         font-style: normal;
         font-weight: 700;
