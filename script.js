@@ -18,6 +18,7 @@ const clock = document.querySelector(".clock");
 
 numberOfCards();
 
+//Ask how many cards the player wants
 function numberOfCards(){
   while (qtdCards < 4 || qtdCards > 14 || qtdCards % 2 !== 0){
     qtdCards = parseInt(prompt("Quantas cartas? (4 -> 14)"));
@@ -25,6 +26,7 @@ function numberOfCards(){
   placingCards(qtdCards)
 }  
 
+//Put on the screen the number of cards that was informed
 function placingCards(qtdCards){
   srcsFace.sort(comparator);
 
@@ -50,18 +52,19 @@ function placingCards(qtdCards){
       `
   }
   const cards = document.querySelectorAll(".card");
-  cards.forEach(card => card.addEventListener('click', flipCard));
+  cards.forEach(card => card.addEventListener("click", flipCard));
 
   interval = setInterval(increaseCount, 1000);
   clock.innerHTML = 0;
 } 
 
+//Flip the cards
 function flipCard() {
   if(blockCards === true){
     return false;
   }
 
-  this.classList.toggle('flip');
+  this.classList.toggle("flip");
   counter++;
 
   if(firstCard === null){
@@ -73,12 +76,13 @@ function flipCard() {
   checkCards()
 }
 
+//Check if two cards are equal
 function checkCards(){
-  let isMatch = null;
+  let isEqual = null;
 
   if(firstCard.dataset.parrots === secondCard.dataset.parrots){
     point++
-    isMatch = cleanCards();
+    isEqual = cleanCards();
   }else{
     disableCards();
   }
@@ -87,25 +91,29 @@ function checkCards(){
   }
 }
 
+//Remove the flip of the cards
 function removeFlip(){
-  firstCard.classList.remove('flip');
-  secondCard.classList.remove('flip');
+  firstCard.classList.remove("flip");
+  secondCard.classList.remove("flip");
   
   cleanCards();
 }
 
+//Turn the cards over after 1 second
 function disableCards(){
   blockCards = true;
 
   setTimeout(removeFlip, 1000)
 }
 
+//Clear variables after a check
 function cleanCards(){
   firstCard = null;
   secondCard = null;
   blockCards = false;
 }
 
+//Ask if the player wants to play again
 function endOfGame(){
   clearInterval(interval);
   msg = prompt(`Você ganhou em ${counter} jogadas e ${clock.innerHTML} segundos!! Gostaria de jogar novamente? (sim) x (não)`);
@@ -124,15 +132,12 @@ function endOfGame(){
   }
 }
 
+//Shuffles the cards
 function comparator() { 
 	return Math.random() - 0.5; 
 }
 
+//Game clock
 function increaseCount() {
   clock.innerHTML = parseInt(clock.innerHTML) + 1; 
 }
-
-
- 
-
-

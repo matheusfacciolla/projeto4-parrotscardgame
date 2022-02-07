@@ -1,5 +1,3 @@
-/* Layout Desktop */
-
 *{
     box-sizing: border-box;
 }
@@ -113,31 +111,23 @@ ul{
 .clock{
     width: 35px;
     height: 35px;
-    background-color: black;
+    background-color: #c9d495b9;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     border-radius: 50%;
-
 }
 
-  /* Versão mobile */
-
-@media (max-width: 335px){
-
-    body{
-        flex-direction: center;
-        justify-content: center;
-    }
-
-    ul {
+@media (max-width: 414px){
+    body {
         flex-direction: column;
     }
 
-    .carta {
-        margin-left: 109px;
-        margin-right: 109px;
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     header h1 {
@@ -146,8 +136,25 @@ ul{
         font-weight: 700;
         font-size: 36px;
         line-height: 42px;
-        text-align: center;
         letter-spacing: -0.004em;
         color: #75B79E;
+        display: flex;
+        text-align: center;
+        width: 312px;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+
+    ul {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+        width: 100%;  
+    }
+
+    .card{
+        margin-left: 109px;
+        margin-right: 109px;
     }
 }

@@ -4,93 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- links css -->
+    <title>Parrot Card Game</title>
 
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/estilo.css" rel="stylesheet">
-
-    <!-- links fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-
-    <title>Parrot Card Game</title>
+    <link rel="icon" type="imagem/png" href="arquivos-uteis/parrot-16x16.png">
 </head>
 <body>
-
-    <!-- Titulo topo -->
-
     <header><h1>PARROT CARD GAME</h1></header>
-
-    <!-- Conteúdo cartas -->
-
     <main>
         <div class="clock">0</div>
         <section class="cards">
             <ul>
-    <!--    <li class="card" data-identifier="card">
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card1-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/metalparrot.gif" alt="Card1-face"></div>
-            </li>
-            <li class="card" data-identifier="card">
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card2-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/metalparrot.gif" alt="Card2-face"></div>
-            </li>
-             <li class="card" data-identifier="card">
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card3-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/revertitparrot.gif" alt="Card3-face"></div>
-            </li>
-            <li class="card" data-identifier="card">
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card4-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/revertitparrot.gif" alt="Card4-face"></div>
-            </li>
-            <li class="card" data-identifier="card">
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card5-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/bobrossparrot.gif" alt="Card5-face"></div>
-            </li>
-            <li class="card" data-identifier="card">
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card6-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/bobrossparrot.gif" alt="Card6-face"></div>
-            </li>
-            <li class="card" data-identifier="card"> 
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card7-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/explodyparrot.gif" alt="Card7-face"></div>
-            </li>
-            <li class="card" data-identifier="card">
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card8-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/explodyparrot.gif" alt="Card8-face"></div>
-            </li>
-            <li class="card" data-identifier="card"> 
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card9-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/fiestaparrot.gif" alt="Card9-face"></div>
-            </li>
-            <li class="card" data-identifier="card"> 
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card10-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/fiestaparrot.gif" alt="Card10-face"></div>
-            </li>
-            <li class="card" data-identifier="card">
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card11-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/tripletsparrot.gif" alt="Card11-face"></div>
-            </li>
-            <li class="card" data-identifier="card">
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card12-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/tripletsparrot.gif" alt="Card12-face"></div>
-            </li>
-            <li class="card" data-identifier="card">
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card13-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/unicornparrot.gif" alt="Card13-face"></div>
-            </li>
-            <li class="card" data-identifier="card">
-                <div class="back" data-identifier="back-face"><img class="back" data-identifier="back-face" src="arquivos-uteis/front.png" alt="Card14-back"></div>
-                <div class="face" data-identifier="front-face"><img class="face" data-identifier="front-face" src="arquivos-uteis/unicornparrot.gif" alt="Card14-face"></div>
-            </li>   -->
             </ul>   
         </section>
     </main>  
-
-    <!-- java script -->
 
     <script src="script.js"></script>
 </body>
