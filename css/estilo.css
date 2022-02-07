@@ -108,7 +108,7 @@ ul{
     transform: rotateY(180deg);
 }
 
-.clock{
+.clock {
     width: 35px;
     height: 35px;
     background-color: #c9d495b9;
@@ -153,7 +153,7 @@ ul{
         width: 100%;  
     }
 
-    .card{
+    .card {
         margin-left: 109px;
         margin-right: 109px;
     }

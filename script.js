@@ -23,7 +23,7 @@ function numberOfCards(){
   while (qtdCards < 4 || qtdCards > 14 || qtdCards % 2 !== 0){
     qtdCards = parseInt(prompt("Quantas cartas? (4 -> 14)"));
   }
-  placingCards(qtdCards)
+  placingCards(qtdCards);
 }  
 
 //Put on the screen the number of cards that was informed
@@ -49,7 +49,7 @@ function placingCards(qtdCards){
               <img src="arquivos-uteis/${cardsList[i]}.gif" alt="${cardsList[i]}">
           </div>
       </li>
-      `
+      `;
   }
   const cards = document.querySelectorAll(".card");
   cards.forEach(card => card.addEventListener("click", flipCard));
@@ -73,7 +73,7 @@ function flipCard() {
   } 
   secondCard = this;
   
-  checkCards()
+  checkCards();
 }
 
 //Check if two cards are equal
@@ -87,7 +87,7 @@ function checkCards(){
     disableCards();
   }
   if(point === qtdCards/2){
-    setTimeout(endOfGame, 1000)
+    setTimeout(endOfGame, 1000);
   }
 }
 
@@ -103,7 +103,7 @@ function removeFlip(){
 function disableCards(){
   blockCards = true;
 
-  setTimeout(removeFlip, 1000)
+  setTimeout(removeFlip, 1000);
 }
 
 //Clear variables after a check
@@ -128,13 +128,13 @@ function endOfGame(){
     cleanCards();
     numberOfCards();
   }else{
-    alert(`Obrigado por jogar!!`)
+    alert(`Obrigado por jogar!!`);
   }
 }
 
 //Shuffles the cards
 function comparator() { 
-	return Math.random() - 0.5; 
+  return Math.random() - 0.5; 
 }
 
 //Game clock
